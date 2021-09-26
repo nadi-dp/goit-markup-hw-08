@@ -14,11 +14,15 @@
 }
 @media screen and (min-width: 768px) {
   .advantages-list__item {
+    margin-top: 30px;
+    margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
-.advantages-list__item {
-  width: 270px;
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    width: 270px;
+  }
 }
 .advantages-list__item:not(:last-child) {
   margin-bottom: 30px;
@@ -29,7 +33,6 @@
     margin-bottom: 0;
   }
 }
-
 .advantages-title {
   font-size: 14px;
   font-weight: 700;
