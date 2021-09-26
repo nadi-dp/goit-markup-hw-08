@@ -1,0 +1,132 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  background-color: #2f303a;
+}
+.logo-link {
+  color: #2196f3;
+}
+.logo-part_footer {
+  color: var(--white-color);
+}
+.contacts-list {
+  margin-top: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.contact-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contact-link-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+.footer-left-part {
+  margin-right: 70px;
+}
+.footer-right-part {
+  width: 206px;
+  height: 80px;
+}
+.footer-right-part-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer-social-list__icon {
+  fill: currentColor;
+}
+.footer-list__link_theme-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer-form-box-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.footer-form-box {
+  margin-left: 93px;
+}
+.footer-form {
+  display: flex;
+}
+.footer-form-field {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: var(--white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 29px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+  }
+}
+.footer-form-icon {
+  fill: var(--white-color);
+  margin-left: 10px;
+}

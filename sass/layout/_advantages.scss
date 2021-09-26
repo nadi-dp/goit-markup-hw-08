@@ -1,0 +1,23 @@
+.advantages-cards__icon {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}

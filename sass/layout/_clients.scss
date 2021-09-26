@@ -1,0 +1,24 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+}
+.clients-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  fill: #afb1b8;
+  color: currentColor;
+}
+.clients-list__link:hover,
+.clients-list__link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
