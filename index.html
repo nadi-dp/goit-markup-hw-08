@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- HEADER --> ПРОБЛЕМА!! нет скролла вниз в мобилке
     <header class="header">
       <div class="container header-container">
+        
         <nav class="main-navigation">
           <a class="logo logo-link-header link" href="/"
             >Web<span class="logo logo-part">Studio</span></a
@@ -38,6 +39,11 @@
             </li>
           </ul>
         </nav>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="header-contacts list">
           </li>
           <li class="header-contact-item">
@@ -57,6 +63,48 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close type="button">
+            <svg class="close-btn__icon">
+              <use href="./images/sprite.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="navigation-list_mobile list">
+            <li class="navigation-list__item_mobile">
+              <a class="navigation-list__link link current" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-list__item_mobile">
+              <a class="navigation-list__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-list__item_mobile">
+              <a class="navigation-list__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="contacts-list_mobile list">
+            <li class="contacts-list__item_mobile">
+              <a class="contacts__tel-link link" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="contacts-list__item_mobile">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="social-media-list list">
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">Instagram</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">Twitter</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">Facebook</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -750,6 +798,7 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
