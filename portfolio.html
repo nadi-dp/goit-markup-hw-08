@@ -19,24 +19,31 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
+        
         <nav class="main-navigation">
           <a class="logo logo-link-header link" href="/"
             >Web<span class="logo logo-part">Studio</span></a
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link" href="/">Студия</a>
+              <a class="menu__link link current" href="">Студия
+              </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link current" href="./portfolio.html">Портфолио</a>
+              <a class="menu__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="header-contacts list">
           </li>
           <li class="header-contact-item">
@@ -57,7 +64,49 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close type="button">
+            <svg class="close-btn__icon">
+              <use href="./images/sprite.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="navigation-list_mobile list">
+            <li class="navigation-list__item_mobile">
+              <a class="navigation-list__link link current" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-list__item_mobile">
+              <a class="navigation-list__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-list__item_mobile">
+              <a class="navigation-list__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="contacts-list_mobile list">
+            <li class="contacts-list__item_mobile">
+              <a class="contacts__tel-link link" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="contacts-list__item_mobile">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="social-media-list list">
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">Instagram</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">Twitter</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">Facebook</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- PROJECTS -->
       <section class="site-navigation section">
@@ -697,16 +746,16 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <!-- <footer class="footer footer-container">
+     <footer class="footer footer-container">
       <div class="container flex">
-        <div class="footer-left-part">
+        <div class="footer-wrapper_tablet">
+          <div class="footer-left-part">
           <a class="logo logo-link link" href="/"
-          >Web<span class="logo logo-part_footer">Studio</span></a
-        >
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <address>
-              <a
+          >Web<span class="logo logo-part_footer">Studio</span></a>
+          <ul class="contacts-list list">
+            <li class="contacts-list__item">
+              <address>
+                <a
                 class="contact-link-address link"
                 href="https://goo.gl/maps/ZMhr3b1z7a1dPWrQ9"
                 target="_blank"
@@ -718,7 +767,7 @@
           <li class="contacts-list__item">
             <address>
               <a class="contact-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                >info@example.com</a
               >
             </address>
           </li>
@@ -760,7 +809,8 @@
                     </a>
                   </li>
                 </ul>
-        </div>
+        </div></div>
+        
         <div class="footer-form-box">
           <h3 class="footer-form-box-title">Подпишитесь на рассылку</h3>
           <form class="footer-form">
@@ -773,6 +823,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

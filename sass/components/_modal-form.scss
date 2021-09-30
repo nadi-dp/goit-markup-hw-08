@@ -81,12 +81,13 @@
 .modal-form-checkbox {
   outline: none;
 }
+
 .modal-form-checkbox-label {
   display: flex;
   justify-content: center;
+  font-size: 12px;
+  line-height: 1.16;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-color);
   &::before {
@@ -105,6 +106,12 @@
     .modal-form-checkbox:focus + & {
       border-color: var(--accent-color);
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 .modal-form-btn {

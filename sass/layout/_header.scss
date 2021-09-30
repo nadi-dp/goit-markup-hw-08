@@ -3,7 +3,6 @@
 //   padding-bottom: 32px;
 //   border-bottom: 1px solid #ececec;
 // }
-
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -13,6 +12,12 @@
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 .header-container {
@@ -144,6 +149,11 @@
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .current::after {
+    bottom: -28px;
   }
 }
 .current {

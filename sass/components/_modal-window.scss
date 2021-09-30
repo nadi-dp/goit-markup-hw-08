@@ -3,11 +3,23 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 100vw;
+  // height: -10vh;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
+  max-height: 609px;
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .close-btn {
   position: absolute;
   top: 8px;
