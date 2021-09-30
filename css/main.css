@@ -473,7 +473,6 @@ body {
 .social-media-list {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .social-media__item:not(:last-child) {
