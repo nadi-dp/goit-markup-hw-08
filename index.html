@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- HEADER ПРОБЛЕМА!! -->
+    <!-- HEADER -->
     <header class="header">
       <div class="container header-container">
         
@@ -184,12 +184,16 @@
           <h2 class="titles">Чем мы занимаемся</h2>
           <ul class="occupation-list list">
             <li class="occupation-list__item">
-              <img
+              <picture class="picture">
+                <source media="(min-width: 1200px)"
+                srcset="./images/features/img-keyboard.jpg 1x, ./images/features/img-keyboard@2x.jpg 2x">
+                <img
                 class="occupation__icon"
-                src="./images/features/klava.jpg"
+                src="./images/features/img-keyboard.jpg"
                 alt="клавиатура"
                 width="370"
               />
+              </picture>
               <div class="occupation-list-wrapper">
                 <h3 class="occupation-list-wrapper-text">
                   Десктопные приложения
@@ -197,12 +201,22 @@
               </div>
             </li>
             <li class="occupation-list__item">
-              <img
+              <picture class="picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/features/img-smartphone.jpg    1x,
+                    ./images/features/img-smartphone@2x.jpg 2x
+                  "
+                />
+                <img
                 class="occupation__icon"
-                src="./images/features/smartphone.jpg"
+                src="./images/features/img-smartphone.jpg"
                 alt="смартфон"
                 width="370"
               />
+              </picture>
+              
               <div class="occupation-list-wrapper">
                 <h3 class="occupation-list-wrapper-text">
                   Мобильные приложения
@@ -210,12 +224,22 @@
               </div>
             </li>
             <li class="occupation-list__item">
-              <img
+              <picture class="picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/features/img-tablet.jpg    1x,
+                    ./images/features/img-tablet@2x.jpg 2x
+                  "
+                />
+                <img
                 class="occupation__icon"
-                src="./images/features/tablet.jpg"
+                src="./images/features/img-tablet.jpg"
                 alt="планшет"
                 width="370"
               />
+              </picture>
+              
               <div class="occupation-list-wrapper">
                 <h3 class="occupation-list-wrapper-text">
                   Дизайнерские решения
@@ -731,8 +755,7 @@
                     </a>
                   </li>
                 </ul>
-        </div></div>
-        
+        </div>
         <div class="footer-form-box">
           <h3 class="footer-form-box-title">Подпишитесь на рассылку</h3>
           <form class="footer-form">
